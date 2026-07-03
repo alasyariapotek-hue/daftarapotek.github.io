@@ -1,0 +1,118 @@
+:root {
+  --primary-color: #2f5fdb;
+  --primary-dark: #1e46b3;
+}
+
+body {
+  background: linear-gradient(135deg, #f4f7fb 0%, #e9eff9 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+/* ===== Logo Header ===== */
+.header-icon {
+  width: 5cm !important;
+  height: 5cm !important;
+  max-width: 5cm !important;
+  max-height: 5cm !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+  font-size: 1.8rem;
+  overflow: visible;
+}
+
+.header-icon:not(:has(img)) {
+  background: var(--primary-color);
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(47, 95, 219, 0.35);
+}
+
+.logo-img {
+  width: 5cm !important;
+  height: 5cm !important;
+  max-width: 5cm !important;
+  max-height: 5cm !important;
+  object-fit: contain;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  filter: drop-shadow(0 0 20px rgba(47, 95, 219, 0.75))
+          drop-shadow(0 0 40px rgba(47, 95, 219, 0.45));
+}
+
+.form-card {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.section-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Garis hitam di bawah bar judul section (Data Diri, Unggah Dokumen, Motivasi) */
+.section-title + hr {
+  border: none;
+  border-top: 2px solid #000000;
+  opacity: 1;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-primary:disabled {
+  background-color: #7c95d8;
+  border-color: #7c95d8;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(47, 95, 219, 0.2);
+}
+
+/* ===== Overlay Loading ===== */
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-box {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.d-none {
+  display: none !important;
+}
+
+/* ===== Responsif ===== */
+@media (max-width: 576px) {
+  .form-card {
+    border-radius: 12px;
+  }
+  .header-icon {
+    width: 3.5cm;
+    height: 3.5cm;
+    font-size: 1.4rem;
+  }
+}

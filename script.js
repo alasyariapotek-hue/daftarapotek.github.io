@@ -3,7 +3,7 @@
 // Didapat dari: Deploy > Manage deployments > (ikon copy di kolom Web app)
 // Formatnya seperti: https://script.google.com/macros/s/AKfycbx.../exec
 // =====================================================================
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby8Adkzi8N5OPkiArt3r0wdN5ofmtzEOo_oONdbyHXa0fCdxGyZWbz6uMogN5fRqK_AvQ/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyTUvi9GrZyqHoV9VzMduxOhGVYiz_LwAkWj_fC3srQqcIjbWsrtLewbSHrwaf3a_XKWg/exec';
 
 // =====================================================================
 // KONFIGURASI VALIDASI CLIENT-SIDE
